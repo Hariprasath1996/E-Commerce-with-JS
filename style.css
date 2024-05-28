@@ -45,7 +45,7 @@ column-gap: 20px;
     left: 0;
     color: white;
     padding: 20px;
-    display: block;
+    display: none;
     transition:1s;
 }
 .Side-Navbar-links{
