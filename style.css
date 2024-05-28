@@ -14,8 +14,14 @@ body{
     padding:30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+.Navbar-links{
+    display: flex;
+    flex-direction: row;
+    column-gap:30px;
+}
 .Navbar-para{
 display: flex;
+flex-direction: row;
 column-gap: 20px;
 }
 .Navbar-para a{
@@ -25,6 +31,52 @@ column-gap: 20px;
     text-decoration:underline
 }
 .toggle-menu{
-    /* display: none; */
+    display: none;
     font-size: larger;
 }
+
+@media screen and (max-width:600px){
+    .toggle-menu{
+        display: block;
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width:700px){
+    .Navbar-para{
+        display: none;
+        }
+}
+
+/* Side _ NavBar -styles */
+.Side-Navbar{
+    background-color: grey;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    padding: 20px;
+    display: none;
+}
+.Side-Navbar-links{
+    display: flex;
+    flex-direction: column;
+    row-gap:30px;
+}
+.Side-Navbar-para a{
+text-decoration: none;
+color: white;
+}
+.Side-Navbar-para a :hover{
+    text-decoration: underline;
+    }
+
+    @media screen  and (max-width:600px){
+        .Side-Navbar{
+            display: block;
+        }
+    }
+
+
