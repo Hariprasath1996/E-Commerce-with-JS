@@ -35,19 +35,6 @@ column-gap: 20px;
     font-size: larger;
 }
 
-@media screen and (max-width:600px){
-    .toggle-menu{
-        display: block;
-        font-size: larger;
-    }
-}
-
-@media screen and (max-width:700px){
-    .Navbar-para{
-        display: none;
-        }
-}
-
 /* Side _ NavBar -styles */
 .Side-Navbar{
     background-color: grey;
@@ -58,7 +45,8 @@ column-gap: 20px;
     left: 0;
     color: white;
     padding: 20px;
-    display: none;
+    display: block;
+    transition:1s;
 }
 .Side-Navbar-links{
     display: flex;
@@ -71,6 +59,20 @@ color: white;
 }
 .Side-Navbar-para a :hover{
     text-decoration: underline;
+    }
+
+/* media query  */
+    @media screen and (max-width:600px){
+        .toggle-menu{
+            display: block;
+            font-size: larger;
+        }
+    }
+    
+    @media screen and (max-width:700px){
+        .Navbar-para{
+            display: none;
+            }
     }
 
     @media screen  and (max-width:600px){
